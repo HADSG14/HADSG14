@@ -8,3 +8,13 @@ C:\Users\indig\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.vbproj
 C:\Users\indig\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.dll
 C:\Users\indig\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.xml
 C:\Users\indig\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.pdb
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\bin\Debug\EmailSender.dll
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\bin\Debug\EmailSender.pdb
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\bin\Debug\EmailSender.xml
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\obj\Debug\EmailSender.vbprojAssemblyReference.cache
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\obj\Debug\EmailSender.Resources.resources
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\obj\Debug\EmailSender.vbproj.GenerateResource.cache
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\obj\Debug\EmailSender.vbproj.CoreCompileInputs.cache
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\obj\Debug\EmailSender.dll
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\obj\Debug\EmailSender.xml
+C:\Users\Curro\Source\Repos\EmailSender\EmailSender\obj\Debug\EmailSender.pdb
