@@ -127,3 +127,6 @@ C:\Users\Curro\Source\Repos\ProyectoG14\ProyectoG14\bin\EmailSender.pdb
 C:\Users\Curro\Source\Repos\ProyectoG14\ProyectoG14\bin\EmailSender.xml
 C:\Users\Curro\Source\Repos\ProyectoG14\ProyectoG14\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Curro\Source\Repos\ProyectoG14\ProyectoG14\obj\Debug\ProyectoG14.vbproj.CopyComplete
+C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\bin\AccesoDatos.dll
+C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\bin\AccesoDatos.pdb
+C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\bin\AccesoDatos.xml

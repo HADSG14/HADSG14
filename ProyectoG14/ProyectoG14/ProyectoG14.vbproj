@@ -46,6 +46,9 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AccesoDatos">
+      <HintPath>..\..\AccesoDatos\AccesoDatos\obj\Debug\AccesoDatos.dll</HintPath>
+    </Reference>
     <Reference Include="EmailSender">
       <HintPath>..\..\EmailSender\EmailSender\bin\Debug\EmailSender.dll</HintPath>
     </Reference>
@@ -95,14 +98,31 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CambiarContraseña.aspx" />
+    <Content Include="ConfirmarCorreo.aspx" />
     <Content Include="fondo.jpeg" />
     <Content Include="fondo2.png" />
     <Content Include="Home.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="SolicitarCambioContraseña.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CambiarContraseña.aspx.designer.vb">
+      <DependentUpon>CambiarContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarContraseña.aspx.vb">
+      <DependentUpon>CambiarContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmarCorreo.aspx.designer.vb">
+      <DependentUpon>ConfirmarCorreo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmarCorreo.aspx.vb">
+      <DependentUpon>ConfirmarCorreo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Home.aspx.designer.vb">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
@@ -143,6 +163,13 @@
       <DependentUpon>Registro.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="SolicitarCambioContraseña.aspx.designer.vb">
+      <DependentUpon>SolicitarCambioContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitarCambioContraseña.aspx.vb">
+      <DependentUpon>SolicitarCambioContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -157,6 +184,9 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\PublishProfiles\HADSg14 - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\HADSg14 - ReadOnly - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\HADSg14 - Web Deploy.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
