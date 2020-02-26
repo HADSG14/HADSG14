@@ -226,6 +226,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoG14.Inicio._LinkButton2">
+<summary>
+Control LinkButton2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoG14.Registro._form1">
 <summary>
 Control form1.
@@ -409,6 +418,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoG14.SolicitarCambioContraseña._RequiredFieldValidator2">
 <summary>
 Control RequiredFieldValidator2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.SolicitarCambioContraseña._RegularExpressionValidator1">
+<summary>
+Control RegularExpressionValidator1.
 </summary>
 <remarks>
 Campo generado automáticamente.

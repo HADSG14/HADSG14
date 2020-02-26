@@ -24,7 +24,6 @@
             <span class="auto-style3">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox1" ErrorMessage="*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                 <br />
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Error de sintaxis" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 <br />
                 <asp:Button ID="Button1" runat="server" Text="Solicitar clave" />
                 <br />
@@ -33,13 +32,13 @@
                 <asp:Label ID="Label_clave" runat="server" Text="Por favor, revisa tu correo electronico e instroduce la clave que te hemos enviado:" Visible="False"></asp:Label>
                 <br />
                 <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="InsertarClave" runat="server" Width="89px" style="margin-left: 0px" Visible="False"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                <asp:TextBox ID="InsertarClave" runat="server" Width="89px" style="margin-left: 130px" Visible="False"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Label ID="ErrorClave" runat="server" ForeColor="Red" Text="Clave incorrecta" Visible="False"></asp:Label>
                 <br />
+                <br />
             <span class="auto-style3">
-                <asp:Button ID="ButtonConfirmar" runat="server" Text="Comprobar clave" Visible="False" />
+                <asp:Button ID="ButtonConfirmar" runat="server" Text="Solicitar clave" Visible="False" />
                 </span>
                 <br />
                 <br />

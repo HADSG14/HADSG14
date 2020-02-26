@@ -18,6 +18,7 @@
             bd.conectar()
             bd.cambiarContraseña(email, cont)
             bd.cerrarconexion()
+            Response.Redirect("Inicio.aspx")
         End If
     End Sub
 End Class

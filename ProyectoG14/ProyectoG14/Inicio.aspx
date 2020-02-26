@@ -57,9 +57,11 @@
                 <br />
                 <br />
                 ¿Todavía no tienes cuenta? 
-                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" PostBackUrl="~/Registro.aspx">Regístrate</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False">Regístrate</asp:LinkButton>
 &nbsp;<br />
-&nbsp;¿Has olvidado tu contraseña? <a href="javascript:__doPostBack('LinkButton1','')">Cambiar Contraseña</a><br />
+&nbsp;¿Has olvidado tu contraseña?  
+                <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False">Cambiar Contraseña</asp:LinkButton>
+                <br />
             </div>
         </div>
     </form>

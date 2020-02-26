@@ -10,6 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="email_label" runat="server"></asp:Label>
+            <br />
             Gracias por verificar tu correo. Disfruta ahora de nuestros servicios.<br />
             <br />
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Inicio.aspx">Inicia Sesión</asp:HyperLink>

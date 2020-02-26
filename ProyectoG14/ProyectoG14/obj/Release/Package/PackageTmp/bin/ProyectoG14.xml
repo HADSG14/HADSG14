@@ -37,9 +37,90 @@ ProyectoG14
  Devuelve el objeto de registro Asp.
  </summary>
 </member>
+<member name="F:ProyectoG14.Cambiar_contraseña._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Cambiar_contraseña._TextBox1">
+<summary>
+Control TextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Cambiar_contraseña._RequiredFieldValidator2">
+<summary>
+Control RequiredFieldValidator2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Cambiar_contraseña._RegularExpressionValidator2">
+<summary>
+Control RegularExpressionValidator2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Cambiar_contraseña._TextBox2">
+<summary>
+Control TextBox2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Cambiar_contraseña._RequiredFieldValidator3">
+<summary>
+Control RequiredFieldValidator3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Cambiar_contraseña._Button1">
+<summary>
+Control Button1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Cambiar_contraseña._Error">
+<summary>
+Control Error.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoG14.ConfirmarCorreo._form1">
 <summary>
 Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.ConfirmarCorreo._email_label">
+<summary>
+Control email_label.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -118,15 +199,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoG14.Inicio._RegularExpressionValidator2">
-<summary>
-Control RegularExpressionValidator2.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ProyectoG14.Inicio._Button1">
 <summary>
 Control Button1.
@@ -136,9 +208,27 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoG14.Inicio._Label_error">
+<summary>
+Control Label_error.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoG14.Inicio._LinkButton1">
 <summary>
 Control LinkButton1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Inicio._LinkButton2">
+<summary>
+Control LinkButton2.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -172,6 +262,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoG14.Registro._RegularExpressionValidator1">
+<summary>
+Control RegularExpressionValidator1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoG14.Registro._TextBox6">
 <summary>
 Control TextBox6.
@@ -190,9 +289,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoG14.Registro._RegularExpressionValidator1">
+<member name="F:ProyectoG14.Registro._TextBox7">
 <summary>
-Control RegularExpressionValidator1.
+Control TextBox7.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Registro._RequiredFieldValidator5">
+<summary>
+Control RequiredFieldValidator5.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -211,24 +319,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoG14.Registro._RequiredFieldValidator2">
 <summary>
 Control RequiredFieldValidator2.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ProyectoG14.Registro._TextBox7">
-<summary>
-Control TextBox7.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ProyectoG14.Registro._RequiredFieldValidator5">
-<summary>
-Control RequiredFieldValidator5.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -283,6 +373,96 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoG14.Registro._Button1">
 <summary>
 Control Button1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Registro._ErrorSql">
+<summary>
+Control ErrorSql.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Registro._link_verificar">
+<summary>
+Control link_verificar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.SolicitarCambioContraseña._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.SolicitarCambioContraseña._TextBox1">
+<summary>
+Control TextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.SolicitarCambioContraseña._RequiredFieldValidator2">
+<summary>
+Control RequiredFieldValidator2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.SolicitarCambioContraseña._Button1">
+<summary>
+Control Button1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.SolicitarCambioContraseña._Label_clave">
+<summary>
+Control Label_clave.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.SolicitarCambioContraseña._InsertarClave">
+<summary>
+Control InsertarClave.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.SolicitarCambioContraseña._ErrorClave">
+<summary>
+Control ErrorClave.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.SolicitarCambioContraseña._ButtonConfirmar">
+<summary>
+Control ButtonConfirmar.
 </summary>
 <remarks>
 Campo generado automáticamente.

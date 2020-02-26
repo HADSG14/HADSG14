@@ -6,7 +6,7 @@ Public Class Class1
 
     Public Shared Function conectar() As Boolean
         Try
-            conexion.ConnectionString = “Server=tcp:hadsg14a.database.windows.net,1433;Initial Catalog=HADSG14;Persist Security Info=False;User ID=agarcia697@ikasle.ehu.eus@hadsg14a;Password=Asiergonzalo14;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+            conexion.ConnectionString = “Server=tcp:hads.database.windows.net,1433;Initial Catalog=Amigos;Persist Security Info=False;User ID=vadillo@ehu.es@hads;Password=curso19-20;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
             conexion.Open()
         Catch ex As Exception
             Return False
@@ -53,9 +53,8 @@ Public Class Class1
 
         Dim st = "select * from Usuarios where email='" & email & "'"
         comando = New SqlCommand(st, conexion)
-        Dim RS As SqlDataReader
-        RS = comando.ExecuteReader
-        Return (RS)
+
+        Return (comando.ExecuteReader())
 
 
 

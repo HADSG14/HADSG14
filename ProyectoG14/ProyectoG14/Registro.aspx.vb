@@ -22,7 +22,7 @@
 
         Dim tipo As String = DropDownList1.SelectedValue
 
-        Dim enlace As String = "http://hadsg14.azurewebsites.net/ConfirmarCorreo.aspx?email=" & email & "&numconfir=" & numconfir
+        Dim enlace As String = "http://localhost:53743/ConfirmarCorreo.aspx?email=" & email & "&numconfir=" & numconfir
         Dim msg As String = "<html><header></header><body> Haz click en el siguiente enlace para verificar tu cuenta: <a href='" & enlace & "'> verificar </a></body></html>"
 
         Console.WriteLine("creadas variables")
@@ -40,7 +40,7 @@
         If conectado = False Then
             ErrorSql.Text = "fallo en la conexión"
         Else
-            ErrorSql.Text = "conectado"
+            ErrorSql.Text = "Registrado, por favor, compruebe su correo electrónico para verificar la cuenta"
         End If
         Console.WriteLine(dataAcccess.insertar(email, nombre, apellidos, cont, numconfir, tipo))
         dataAcccess.cerrarconexion()
@@ -55,7 +55,7 @@
 
 
     Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles link_verificar.Click
-        Dim location As String = "~/ConfirmarCorreo.aspx?email=" & TextBox3.Text
+        Dim location As String = "ConfirmarCorreo.aspx?email=" & TextBox3.Text
         Response.Redirect(location)
         'Server.Execute(location)
     End Sub

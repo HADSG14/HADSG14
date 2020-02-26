@@ -184,6 +184,9 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\PublishProfiles\hads1920-G14 - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\hads1920-G14 - ReadOnly - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\hads1920-G14 - Web Deploy.pubxml" />
     <None Include="My Project\PublishProfiles\HADSg14 - FTP.pubxml" />
     <None Include="My Project\PublishProfiles\HADSg14 - ReadOnly - FTP.pubxml" />
     <None Include="My Project\PublishProfiles\HADSg14 - Web Deploy.pubxml" />

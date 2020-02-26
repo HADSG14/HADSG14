@@ -10,13 +10,15 @@
         Label_clave.Visible = True
         ButtonConfirmar.Visible = True
         InsertarClave.Visible = True
-        Dim email As String = TextBox1.Text
+        Dim email As String = TextBox1.Text + " "
         Button1.Text = "Volver a enviar"
         Dim bd As New AccesoDatos.Class1
+        Dim mailSender As New EmailSender.Class1
         bd.conectar()
         Randomize()
         Dim clave As Integer = CLng(900000 * Rnd()) + 1000000
         bd.updateClave(email, clave)
+        mailSender.enviarEmail(email, clave)
         bd.cerrarconexion()
 
     End Sub
@@ -32,7 +34,7 @@
         If clave <> claveintroducida Then
             ErrorClave.Visible = True
         Else
-            Response.Redirect("~/CambiarContraseña.aspx?email=" & email)
+            Response.Redirect("CambiarContraseña.aspx?email=" & email)
         End If
 
 
