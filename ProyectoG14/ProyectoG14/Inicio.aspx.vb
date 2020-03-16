@@ -5,23 +5,33 @@ Public Class Inicio
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
+        If Session("type") = "Alumno" Then
+            Response.Redirect("Alumnos.aspx")
+        ElseIf Session("type") = "Profesor" Then
+            Response.Redirect("Profesor.aspx")
+            End If
+
+
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim correo As String = email.Text & " "
-        Dim contraseña As String = " " + pass.Text
+        Dim correo As String = email.Text
+        Dim contraseña As String = pass.Text
         Dim bd As New AccesoDatos.Class1
         bd.conectar()
         Dim resultado As SqlDataReader = bd.checkAccount(correo)
         Dim confirmado As Boolean
         Dim passBD As String
+        Dim type As String
 
         While resultado.Read
             passBD = resultado.Item("pass")
             confirmado = resultado.Item("confirmado")
+            type = resultado.Item("tipo")
         End While
 
         resultado.Close()
+        bd.cerrarconexion()
 
 
         If passBD <> contraseña Then
@@ -29,11 +39,18 @@ Public Class Inicio
         ElseIf confirmado <> True Then
             Label_error.Text = "Parece que su cuenta no esta verificada"
         Else
-            Response.Redirect("Home.aspx")
+            Session("email") = correo
+            MsgBox(type)
+            If type = "Alumno" Then
+                Session("type") = type
+                Response.Redirect("Alumnos.aspx")
+            Else
+                Session("type") = type
+                Response.Redirect("Profesor.aspx")
+        End If
         End If
 
 
-        bd.cerrarconexion()
 
 
 

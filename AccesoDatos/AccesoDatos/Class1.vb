@@ -3,6 +3,7 @@
 Public Class Class1
     Private Shared conexion As New SqlConnection
     Private Shared comando As New SqlCommand
+    Private Shared dst As New DataSet
 
     Public Shared Function conectar() As Boolean
         Try
@@ -18,7 +19,7 @@ Public Class Class1
 
     Public Shared Function insertar(ByVal email As String, ByVal nombre As String, ByVal apellidos As String, ByVal pass As String, ByVal numconfir As Integer, ByVal tipo As String) As String
 
-        Dim st = "Insert into Usuarios values('" & email & " ','" & nombre & "',' " & apellidos & "'," & numconfir & ", '0' ,' " & tipo & " ',' " & pass & "', 0)"
+        Dim st = "Insert into Usuarios values('" & email & "','" & nombre & "','" & apellidos & "'," & numconfir & ",'0','" & tipo & "','" & pass & "',0)"
 
 
         Dim numregs As Integer
@@ -104,10 +105,72 @@ Public Class Class1
 
     End Function
 
+    Public Shared Function getTablaTareasAlumno(ByVal asignatura As String) As DataTable
+        dst.Reset()
+        Dim dap As New SqlDataAdapter("select * from TareasGenericas WHERE CodAsig='" + asignatura + "'", conexion)
+        Dim bld As New SqlCommandBuilder(dap)
+        dap.Fill(dst, "Tareas")
 
+
+        Return dst.Tables("Tareas")
+
+    End Function
+
+    Public Shared Function getTablaAsignaturas(ByVal email As String) As DataTable
+
+        dst.Reset()
+        Dim dap As New SqlDataAdapter("SELECT DISTINCT codigoasig FROM EstudiantesGrupo INNER JOIN GruposClase ON Grupo=codigo WHERE email='" & email & "'", conexion)
+        Dim bld As New SqlCommandBuilder(dap)
+        dap.Fill(dst, "Asignaturas")
+
+
+        Return dst.Tables("Asignaturas")
+    End Function
+
+    Public Shared Function getInstancias(ByVal email As String) As DataTable
+
+        dst.Reset()
+        Dim dap As New SqlDataAdapter("SELECT * FROM EstudiantesTareas WHERE Email='" & email & "'", conexion)
+        Dim bld As New SqlCommandBuilder(dap)
+        dap.Fill(dst, "Instancias")
+
+
+        Return dst.Tables("Instancias")
+    End Function
+
+    Public Shared Function insertarInstancias(ByVal Email As String, ByVal CodTareas As String, ByVal HEstimadas As Integer, ByVal HReales As Integer) As Boolean
+
+        Dim st = "Insert into EstudiantesTareas values('" & Email & "','" & CodTareas & "','" & HEstimadas & "','" & HReales & "')"
+        comando = New SqlCommand(st, conexion)
+        Try
+            comando.ExecuteNonQuery()
+        Catch ex As Exception
+            cerrarconexion()
+
+            Return False
+        End Try
+
+        Return True
+    End Function
+
+
+    Public Shared Function insertarTareas(ByVal Codigo As String, ByVal descripcion As String, ByVal codasig As String, ByVal HEstimadas As Integer, ByVal Tipo As String) As Boolean
+        Dim st = "Insert into TareasGenericas values('" & Codigo & "','" & descripcion & "','" & codasig & "','" & HEstimadas & "','False','" & Tipo & "')"
+        comando = New SqlCommand(st, conexion)
+        Try
+            comando.ExecuteNonQuery()
+        Catch ex As Exception
+            cerrarconexion()
+
+            Return False
+        End Try
+
+        Return True
+    End Function
 
     Public Shared Sub cerrarconexion()
         conexion.Close()
+
     End Sub
 
 End Class

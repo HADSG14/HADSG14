@@ -62,7 +62,7 @@
 &nbsp;¿Has olvidado tu contraseña?  
                 <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False">Cambiar Contraseña</asp:LinkButton>
                 <br />
-            </div>
+                i</div>
         </div>
     </form>
 </body>
