@@ -98,11 +98,15 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\HAS.xml" />
+    <Content Include="App_Data\SEG.xml" />
     <Content Include="CambiarContraseña.aspx" />
     <Content Include="ConfirmarCorreo.aspx" />
+    <Content Include="ExportarTareas.aspx" />
     <Content Include="fondo.jpeg" />
     <Content Include="fondo2.png" />
     <Content Include="Alumnos.aspx" />
+    <Content Include="ImportarTareas.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="InsertarTarea.aspx" />
     <Content Include="InstanciarTarea.aspx" />
@@ -112,6 +116,7 @@
     <Content Include="TareasAlumno.aspx" />
     <Content Include="TareasProfesor.aspx" />
     <Content Include="Web.config" />
+    <Content Include="App_Data\XSLTFile.xsl" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CambiarContraseña.aspx.designer.vb">
@@ -133,6 +138,20 @@
     </Compile>
     <Compile Include="Alumnos.aspx.vb">
       <DependentUpon>Alumnos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ExportarTareas.aspx.designer.vb">
+      <DependentUpon>ExportarTareas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportarTareas.aspx.vb">
+      <DependentUpon>ExportarTareas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImportarTareas.aspx.designer.vb">
+      <DependentUpon>ImportarTareas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImportarTareas.aspx.vb">
+      <DependentUpon>ImportarTareas.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Inicio.aspx.designer.vb">
@@ -236,6 +255,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="tareas.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

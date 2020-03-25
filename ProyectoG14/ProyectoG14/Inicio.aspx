@@ -22,7 +22,7 @@
             height: 417px;
             margin-left: 342px;
             margin-top: 71px;
-        }
+        A
     </style>
 </head>
 <body style="margin-top: 0px; background: url('fondo2.png') no-repeat;">
@@ -62,7 +62,7 @@
 &nbsp;¿Has olvidado tu contraseña?  
                 <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False">Cambiar Contraseña</asp:LinkButton>
                 <br />
-                i</div>
+                </div>
         </div>
     </form>
 </body>

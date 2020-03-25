@@ -41,7 +41,7 @@
                     Bienvenido profesor</div>
                 </span><span class="auto-style1">
                 <br />
-                </span><br class="auto-style7" />
+                </span>
                 <asp:LinkButton ID="LinkButton1" runat="server" CssClass="auto-style7">Asignaturas</asp:LinkButton>
                 <br class="auto-style7" />
                 <br class="auto-style7" />
@@ -50,6 +50,13 @@
                 <br class="auto-style7" />
                 <asp:LinkButton ID="LinkButton3" runat="server" CssClass="auto-style7">Grupos</asp:LinkButton>
                 <br />
+                <br />
+                <br />
+                <asp:LinkButton ID="LinkButton5" runat="server" CssClass="auto-style7">Importar Tareas</asp:LinkButton>
+                <br />
+                <br />
+                <br />
+                <asp:LinkButton ID="LinkButton6" runat="server" CssClass="auto-style7">Exportar Tareas</asp:LinkButton>
                 <br />
                 <br />
                 <br />

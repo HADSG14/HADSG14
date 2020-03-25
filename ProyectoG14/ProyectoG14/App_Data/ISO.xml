@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<tareas>
+  <tarea codigo="ISO20-Lab1">
+    <descripcion>Lab 1</descripcion>
+    <hestimadas>12</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Ejercicio</tipotarea>
+  </tarea>
+  <tarea codigo="ISO20-Test2">
+    <descripcion>Segundo examen </descripcion>
+    <hestimadas>2</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Examen</tipotarea>
+  </tarea>
+</tareas>

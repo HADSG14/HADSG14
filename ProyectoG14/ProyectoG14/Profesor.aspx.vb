@@ -18,4 +18,12 @@
         Session.Abandon()
         Response.Redirect("Inicio.aspx")
     End Sub
+
+    Protected Sub LinkButton5_Click(sender As Object, e As EventArgs) Handles LinkButton5.Click
+        Response.Redirect("ImportarTareas.aspx")
+    End Sub
+
+    Protected Sub LinkButton6_Click(sender As Object, e As EventArgs) Handles LinkButton6.Click
+        Response.Redirect("ExportarTareas.aspx")
+    End Sub
 End Class

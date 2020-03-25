@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Profesor
+Partial Public Class ImportarTareas
     
     '''<summary>
     '''Control form2.
@@ -32,47 +32,38 @@ Partial Public Class Profesor
     Protected WithEvents LinkButton1 As Global.System.Web.UI.WebControls.LinkButton
     
     '''<summary>
-    '''Control LinkButton2.
+    '''Control DropDownList1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton2 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Control LinkButton3.
+    '''Control SqlDataSource1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton3 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
     
     '''<summary>
-    '''Control LinkButton5.
+    '''Control Button1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton5 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''Control LinkButton6.
+    '''Control Xml1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton6 As Global.System.Web.UI.WebControls.LinkButton
-    
-    '''<summary>
-    '''Control LinkButton4.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LinkButton4 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents Xml1 As Global.System.Web.UI.WebControls.Xml
 End Class

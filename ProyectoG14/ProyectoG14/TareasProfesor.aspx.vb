@@ -21,4 +21,12 @@
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Response.Redirect("InsertarTarea.aspx")
     End Sub
+
+    Protected Sub SqlDataSource1_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs)
+
+    End Sub
+
+    Protected Sub SqlDataSource1_Selecting1(sender As Object, e As SqlDataSourceSelectingEventArgs)
+
+    End Sub
 End Class

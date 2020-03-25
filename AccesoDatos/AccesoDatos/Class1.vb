@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Xml
 
 Public Class Class1
     Private Shared conexion As New SqlConnection
@@ -167,6 +168,103 @@ Public Class Class1
 
         Return True
     End Function
+
+
+    Public Shared Function importarXML(ByVal ListaTareas As XmlNodeList, ByVal CodAsig As String) As Boolean
+        dst.Reset()
+        Try
+            Dim dap As New SqlDataAdapter("Select * From TareasGenericas", conexion)
+            Dim bld As New SqlCommandBuilder(dap)
+            dap.Fill(dst, "TareasGenericas")
+
+            Dim tabla As DataTable = dst.Tables("TareasGenericas")
+
+            For i = 0 To ListaTareas.Count - 1
+                Dim dr As DataRow = tabla.NewRow
+                dr("Codigo") = ListaTareas(i).Attributes(0).InnerText
+                dr("Descripcion") = ListaTareas(i).ChildNodes(0).InnerText
+                dr("CodAsig") = CodAsig
+                dr("HEstimadas") = ListaTareas(i).ChildNodes(1).InnerText
+                dr("Explotacion") = ListaTareas(i).ChildNodes(2).InnerText
+                dr("TipoTarea") = ListaTareas(i).ChildNodes(3).InnerText
+                tabla.Rows.Add(dr)
+            Next
+
+            dap.Update(dst, "TareasGenericas")
+            dst.AcceptChanges()
+        Catch ex As Exception
+            Return False
+        End Try
+
+        Return True
+    End Function
+
+
+
+    Public Shared Function crearXML(ByVal asignatura As String) As XmlDocument
+
+        dst.Reset()
+        Dim dap As New SqlDataAdapter("SELECT * FROM TareasGenericas WHERE CodAsig = '" & asignatura & "'", conexion)
+        Dim bld As New SqlCommandBuilder(dap)
+        dap.Fill(dst, "Instancias")
+
+
+        Dim xd As New XmlDocument
+        Dim dt As DataTable = dst.Tables("Instancias")
+        Dim dr As DataRow
+        Dim tareas As XmlElement = xd.CreateElement("tareas")
+        Dim i As Integer
+        For i = 0 To dt.Rows.Count - 1
+
+            Dim tarea As XmlElement = xd.CreateElement("tarea")
+            Dim codigo As XmlAttribute = xd.CreateAttribute("codigo")
+
+            'creacion nodos
+            Dim descripcion As XmlElement = xd.CreateElement("descripcion")
+            Dim hestimadas As XmlElement = xd.CreateElement("hestimadas")
+            Dim explotacion As XmlElement = xd.CreateElement("explotacion")
+            Dim tipotarea As XmlElement = xd.CreateElement("tipotarea")
+
+            dr = dt.Rows(i)
+
+            'creacion texto de nodos
+            Dim xcodigo As XmlText = xd.CreateTextNode(dr("Codigo"))            Dim xdescripcion As XmlText = xd.CreateTextNode(dr("Descripcion"))
+            Dim xhestimadas As XmlText = xd.CreateTextNode(dr("HEstimadas"))
+            Dim xexplotacion As XmlText = xd.CreateTextNode(dr("Explotacion"))            Dim xtipotarea As XmlText = xd.CreateTextNode(dr("TipoTarea"))
+
+
+            'asignacion texto a nodos
+            codigo.AppendChild(xcodigo)
+            descripcion.AppendChild(xdescripcion)
+            hestimadas.AppendChild(xhestimadas)
+            explotacion.AppendChild(xexplotacion)
+            tipotarea.AppendChild(xtipotarea)
+
+            'meterle los nodos a tarea
+            tarea.Attributes.Append(codigo)
+            tarea.AppendChild(descripcion)
+            tarea.AppendChild(hestimadas)
+            tarea.AppendChild(explotacion)
+            tarea.AppendChild(tipotarea)
+
+            'guardar tarea
+            tareas.AppendChild(tarea)
+        Next
+        xd.AppendChild(tareas)
+        Return xd
+
+    End Function
+
+    Public Shared Function getTareasGenericas(ByVal asignatura As String) As DataTable
+
+        dst.Reset()
+        Dim dap As New SqlDataAdapter("SELECT * FROM TareasGenericas WHERE CodAsig = '" & asignatura & "'", conexion)
+        Dim bld As New SqlCommandBuilder(dap)
+        dap.Fill(dst, "tarea")
+        Return dst.Tables("tarea")
+    End Function
+
+
 
     Public Shared Sub cerrarconexion()
         conexion.Close()
