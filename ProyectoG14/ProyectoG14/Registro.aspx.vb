@@ -42,6 +42,8 @@
         Else
             ErrorSql.Text = "Registrado, por favor, compruebe su correo electrónico para verificar la cuenta"
         End If
+        Dim sec As New Security.Security
+        cont = sec.crypt(cont)
         Console.WriteLine(dataAcccess.insertar(email, nombre, apellidos, cont, numconfir, tipo))
         dataAcccess.cerrarconexion()
         esender.enviarEmail(email, msg)

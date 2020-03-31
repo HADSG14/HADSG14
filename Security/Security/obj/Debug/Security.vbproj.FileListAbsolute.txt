@@ -1,0 +1,10 @@
+C:\Users\indig\source\repos\Security\Security\bin\Debug\Security.dll
+C:\Users\indig\source\repos\Security\Security\bin\Debug\Security.pdb
+C:\Users\indig\source\repos\Security\Security\bin\Debug\Security.xml
+C:\Users\indig\source\repos\Security\Security\obj\Debug\Security.vbprojAssemblyReference.cache
+C:\Users\indig\source\repos\Security\Security\obj\Debug\Security.Resources.resources
+C:\Users\indig\source\repos\Security\Security\obj\Debug\Security.vbproj.GenerateResource.cache
+C:\Users\indig\source\repos\Security\Security\obj\Debug\Security.vbproj.CoreCompileInputs.cache
+C:\Users\indig\source\repos\Security\Security\obj\Debug\Security.dll
+C:\Users\indig\source\repos\Security\Security\obj\Debug\Security.xml
+C:\Users\indig\source\repos\Security\Security\obj\Debug\Security.pdb

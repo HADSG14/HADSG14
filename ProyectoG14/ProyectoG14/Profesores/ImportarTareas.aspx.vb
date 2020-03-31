@@ -12,8 +12,8 @@ Public Class ImportarTareas
 
         If Page.IsPostBack Then
 
-            Xml1.DocumentSource = Server.MapPath("App_Data/" & DropDownList1.SelectedValue & ".xml")
-            Xml1.TransformSource = Server.MapPath("App_Data/XSLTFile.xsl")
+            Xml1.DocumentSource = Server.MapPath("~/App_Data/" & DropDownList1.SelectedValue & ".xml")
+            Xml1.TransformSource = Server.MapPath("~/App_Data/XSLTFile.xsl")
 
 
 
@@ -23,8 +23,8 @@ Public Class ImportarTareas
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
 
-        Xml1.DocumentSource = Server.MapPath("App_Data/" & DropDownList1.SelectedValue & ".xml")
-        Xml1.TransformSource = Server.MapPath("App_Data/XSLTFile.xsl")
+        Xml1.DocumentSource = Server.MapPath("~/App_Data/" & DropDownList1.SelectedValue & ".xml")
+        Xml1.TransformSource = Server.MapPath("~/App_Data/XSLTFile.xsl")
 
     End Sub
 
@@ -36,7 +36,7 @@ Public Class ImportarTareas
         bd.conectar()
 
         Dim xd As New XmlDocument
-        xd.Load(Server.MapPath("App_Data/" & DropDownList1.SelectedValue & ".xml"))
+        xd.Load(Server.MapPath("~/App_Data/" & DropDownList1.SelectedValue & ".xml"))
         Dim ListaTareas As XmlNodeList
         ListaTareas = xd.GetElementsByTagName("tarea")
 

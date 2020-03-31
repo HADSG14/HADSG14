@@ -52,6 +52,9 @@
     <Reference Include="EmailSender">
       <HintPath>..\..\EmailSender\EmailSender\bin\Debug\EmailSender.dll</HintPath>
     </Reference>
+    <Reference Include="Security">
+      <HintPath>..\..\Security\Security\bin\Debug\Security.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -98,23 +101,25 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Alumnos\fondo2.png" />
     <Content Include="App_Data\HAS.xml" />
     <Content Include="App_Data\SEG.xml" />
     <Content Include="CambiarContraseña.aspx" />
     <Content Include="ConfirmarCorreo.aspx" />
-    <Content Include="ExportarTareas.aspx" />
+    <Content Include="Profesores\ExportarTareas.aspx" />
     <Content Include="fondo.jpeg" />
     <Content Include="fondo2.png" />
-    <Content Include="Alumnos.aspx" />
-    <Content Include="ImportarTareas.aspx" />
+    <Content Include="Alumnos\Alumnos.aspx" />
+    <Content Include="Profesores\fondo2.png" />
+    <Content Include="Profesores\ImportarTareas.aspx" />
     <Content Include="Inicio.aspx" />
-    <Content Include="InsertarTarea.aspx" />
-    <Content Include="InstanciarTarea.aspx" />
-    <Content Include="Profesor.aspx" />
+    <Content Include="Profesores\InsertarTarea.aspx" />
+    <Content Include="Alumnos\InstanciarTarea.aspx" />
+    <Content Include="Profesores\Profesor.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="SolicitarCambioContraseña.aspx" />
-    <Content Include="TareasAlumno.aspx" />
-    <Content Include="TareasProfesor.aspx" />
+    <Content Include="Alumnos\TareasAlumno.aspx" />
+    <Content Include="Profesores\TareasProfesor.aspx" />
     <Content Include="Web.config" />
     <Content Include="App_Data\XSLTFile.xsl" />
   </ItemGroup>
@@ -133,24 +138,24 @@
       <DependentUpon>ConfirmarCorreo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Alumnos.aspx.designer.vb">
+    <Compile Include="Alumnos\Alumnos.aspx.designer.vb">
       <DependentUpon>Alumnos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Alumnos.aspx.vb">
+    <Compile Include="Alumnos\Alumnos.aspx.vb">
       <DependentUpon>Alumnos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="ExportarTareas.aspx.designer.vb">
+    <Compile Include="Profesores\ExportarTareas.aspx.designer.vb">
       <DependentUpon>ExportarTareas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExportarTareas.aspx.vb">
+    <Compile Include="Profesores\ExportarTareas.aspx.vb">
       <DependentUpon>ExportarTareas.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="ImportarTareas.aspx.designer.vb">
+    <Compile Include="Profesores\ImportarTareas.aspx.designer.vb">
       <DependentUpon>ImportarTareas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ImportarTareas.aspx.vb">
+    <Compile Include="Profesores\ImportarTareas.aspx.vb">
       <DependentUpon>ImportarTareas.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -161,17 +166,17 @@
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="InsertarTarea.aspx.designer.vb">
+    <Compile Include="Profesores\InsertarTarea.aspx.designer.vb">
       <DependentUpon>InsertarTarea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="InsertarTarea.aspx.vb">
+    <Compile Include="Profesores\InsertarTarea.aspx.vb">
       <DependentUpon>InsertarTarea.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="InstanciarTarea.aspx.designer.vb">
+    <Compile Include="Alumnos\InstanciarTarea.aspx.designer.vb">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="InstanciarTarea.aspx.vb">
+    <Compile Include="Alumnos\InstanciarTarea.aspx.vb">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -194,10 +199,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Profesor.aspx.designer.vb">
+    <Compile Include="Profesores\Profesor.aspx.designer.vb">
       <DependentUpon>Profesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Profesor.aspx.vb">
+    <Compile Include="Profesores\Profesor.aspx.vb">
       <DependentUpon>Profesor.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -215,17 +220,17 @@
       <DependentUpon>SolicitarCambioContraseña.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="TareasAlumno.aspx.designer.vb">
+    <Compile Include="Alumnos\TareasAlumno.aspx.designer.vb">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TareasAlumno.aspx.vb">
+    <Compile Include="Alumnos\TareasAlumno.aspx.vb">
       <DependentUpon>TareasAlumno.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="TareasProfesor.aspx.designer.vb">
+    <Compile Include="Profesores\TareasProfesor.aspx.designer.vb">
       <DependentUpon>TareasProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TareasProfesor.aspx.vb">
+    <Compile Include="Profesores\TareasProfesor.aspx.vb">
       <DependentUpon>TareasProfesor.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>

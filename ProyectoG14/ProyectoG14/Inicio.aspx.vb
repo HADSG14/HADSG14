@@ -5,19 +5,16 @@ Public Class Inicio
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-        If Session("type") = "Alumno" Then
-            Response.Redirect("Alumnos.aspx")
-        ElseIf Session("type") = "Profesor" Then
-            Response.Redirect("Profesor.aspx")
-            End If
 
 
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim correo As String = email.Text
+        Dim sec As New Security.Security
         Dim contraseña As String = pass.Text
         Dim bd As New AccesoDatos.Class1
+        contraseña = sec.crypt(contraseña)
         bd.conectar()
         Dim resultado As SqlDataReader = bd.checkAccount(correo)
         Dim confirmado As Boolean
@@ -41,13 +38,14 @@ Public Class Inicio
         Else
             Session("email") = correo
             MsgBox(type)
+            System.Web.Security.FormsAuthentication.SetAuthCookie(correo, False)
             If type = "Alumno" Then
                 Session("type") = type
-                Response.Redirect("Alumnos.aspx")
+                Response.Redirect("Alumnos/Alumnos.aspx")
             Else
                 Session("type") = type
-                Response.Redirect("Profesor.aspx")
-        End If
+                Response.Redirect("Profesores/Profesor.aspx")
+            End If
         End If
 
 

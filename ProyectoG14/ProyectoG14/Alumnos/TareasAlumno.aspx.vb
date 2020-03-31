@@ -67,7 +67,8 @@
     End Sub
 
     Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles LinkButton1.Click
+        System.Web.Security.FormsAuthentication.SignOut()
         Session.Abandon()
-        Response.Redirect("Inicio.aspx")
+        Response.Redirect("~/Inicio.aspx")
     End Sub
 End Class

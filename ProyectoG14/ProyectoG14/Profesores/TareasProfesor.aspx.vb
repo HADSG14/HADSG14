@@ -15,7 +15,7 @@
 
     Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles LinkButton1.Click
         Session.Abandon()
-        Response.Redirect("Inicio.aspx")
+        Response.Redirect("~/Inicio.aspx")
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
