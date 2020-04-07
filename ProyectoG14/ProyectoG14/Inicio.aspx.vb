@@ -37,13 +37,56 @@ Public Class Inicio
             Label_error.Text = "Parece que su cuenta no esta verificada"
         Else
             Session("email") = correo
-            MsgBox(type)
-            System.Web.Security.FormsAuthentication.SetAuthCookie(correo, False)
+            Dim lista As List(Of String)
+
+            'USUARIO: ALUMNO
             If type = "Alumno" Then
+                System.Web.Security.FormsAuthentication.SetAuthCookie(type, False)
                 Session("type") = type
+                Application.Lock()
+
+                'Calculando número de alumnos loggeados
+                Dim NS As Integer = Application.Contents("alumnos")
+                NS = Application.Contents("alumnos") + 1
+                Application.Contents("alumnos") = NS
+
+
+                'Creando lista de emails de alumnos
+                If Application.Contents("emails_alumnos") Is Nothing Then
+                    lista = New List(Of String)
+                Else
+                    lista = Application.Contents("emails_alumnos")
+                End If
+
+                lista.Add(correo)
+                Application.Contents("emails_alumnos") = lista
+
+                Application.UnLock()
                 Response.Redirect("Alumnos/Alumnos.aspx")
+
+                'USUARIO: PROFESOR
             Else
+                System.Web.Security.FormsAuthentication.SetAuthCookie(type, False)
                 Session("type") = type
+                Application.Lock()
+
+                'Calculando el número de profesores loggeados
+                Dim NS As Integer = Application.Contents("profesores")
+                NS = Application.Contents("profesores") + 1
+                Application.Contents("profesores") = NS
+
+                'Creando lista de emails de profesores
+                If Application.Contents("emails_profesores") Is Nothing Then
+                    lista = New List(Of String)
+                Else
+                    lista = Application.Contents("emails_profesores")
+                End If
+
+                lista.Add(correo)
+                Application.Contents("emails_profesores") = lista
+
+
+                Application.UnLock()
                 Response.Redirect("Profesores/Profesor.aspx")
             End If
         End If

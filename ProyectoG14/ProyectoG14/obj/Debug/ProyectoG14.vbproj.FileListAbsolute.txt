@@ -1,4 +1,3 @@
-C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\obj\Debug\ProyectoG14.vbprojAssemblyReference.cache
 C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\obj\Debug\ProyectoG14.Resources.resources
 C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\obj\Debug\ProyectoG14.vbproj.GenerateResource.cache
 C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\obj\Debug\ProyectoG14.vbproj.CoreCompileInputs.cache
@@ -133,3 +132,5 @@ C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\bin\AccesoDatos.xml
 C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\bin\Security.dll
 C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\bin\Security.pdb
 C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\bin\Security.xml
+C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\bin\AjaxControlToolkit.dll
+C:\Users\indig\source\repos\ProyectoG14\ProyectoG14\obj\Debug\ProyectoG14.vbprojAssemblyReference.cache

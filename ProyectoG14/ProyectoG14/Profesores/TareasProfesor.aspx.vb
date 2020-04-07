@@ -6,7 +6,7 @@
     End Sub
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
-
+        System.Threading.Thread.Sleep(2000)
     End Sub
 
     Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
@@ -14,7 +14,13 @@
     End Sub
 
     Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles LinkButton1.Click
+        System.Web.Security.FormsAuthentication.SignOut()
         Session.Abandon()
+        Application.Lock()
+        Dim NS As Integer = Application.Contents("profesores")
+        NS = Application.Contents("profesores") - 1
+        Application.Contents("profesores") = NS
+        Application.UnLock()
         Response.Redirect("~/Inicio.aspx")
     End Sub
 

@@ -35,12 +35,7 @@
             <div class="auto-style4" style="padding: 0px 0px 0px 0px; margin-left: auto; margin-right: auto; background-color: #FFFFFF; border-radius: 10px;">
                 <span class="auto-style5">
                 <br />
-                Tareas Alumno<div style="position: absolute; top: 81px; left: 746px; width: 80px; height: 18px;">
-                <span class="auto-style5">
-            <asp:LinkButton ID="LinkButton1" runat="server" style="font-size: small">Cerrar sesión</asp:LinkButton>
-                </span>
-                </div>
-                <br />
+                Tareas Alumno<br />
                 <br />
                 </span><span class="auto-style7">Seleccionar Asignatura(solo se muestran aquellas en las que está matriculado):<br />
                 <br />

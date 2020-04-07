@@ -49,6 +49,10 @@
     <Reference Include="AccesoDatos">
       <HintPath>..\..\AccesoDatos\AccesoDatos\obj\Debug\AccesoDatos.dll</HintPath>
     </Reference>
+    <Reference Include="AjaxControlToolkit, Version=19.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\OneDrive\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="EmailSender">
       <HintPath>..\..\EmailSender\EmailSender\bin\Debug\EmailSender.dll</HintPath>
     </Reference>
@@ -120,7 +124,9 @@
     <Content Include="SolicitarCambioContraseña.aspx" />
     <Content Include="Alumnos\TareasAlumno.aspx" />
     <Content Include="Profesores\TareasProfesor.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\XSLTFile.xsl" />
   </ItemGroup>
   <ItemGroup>

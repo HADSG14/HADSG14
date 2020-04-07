@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Profesor.aspx.vb" Inherits="ProyectoG14.Profesor" %>
 
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -18,7 +20,7 @@
         }
         .auto-style4 {
             width: 403px;
-            height: 583px;
+            height: 691px;
             margin-left: 342px;
             margin-top: 71px;
             text-align: center;
@@ -63,6 +65,40 @@
                 <br />
                 <span class="auto-style1">
                 <asp:LinkButton ID="LinkButton4" runat="server">Cerrar sesión</asp:LinkButton>
+                <ajaxToolkit:ConfirmButtonExtender ID="LinkButton4_ConfirmButtonExtender" runat="server" BehaviorID="LinkButton4_ConfirmButtonExtender" ConfirmText="¿Estás seguro de que quieres salir?" TargetControlID="LinkButton4" />
+                <br />
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+                <br />
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <span class="auto-style1">
+                        <div>
+                            <span class="auto-style1">
+                            <asp:Timer ID="Timer1" runat="server" Interval="5000">
+                            </asp:Timer>
+                            </span>
+                            <br />
+                            Alumnos:
+                            <asp:Label ID="NAlumnos" runat="server" Text="Label"></asp:Label>
+                            &nbsp;&nbsp;&nbsp;&nbsp; Profesores:
+                            <asp:Label ID="NProfesores" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            <span class="auto-style1">
+                            <asp:ListBox ID="ListBox1" runat="server" Width="140px"></asp:ListBox>
+                            <asp:ListBox ID="ListBox2" runat="server" Width="140px"></asp:ListBox>
+                            <br />
+                            <br />
+                            </span>
+                            
+                            <br />
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        </span>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            
                 </span>
             </div>
         </div>

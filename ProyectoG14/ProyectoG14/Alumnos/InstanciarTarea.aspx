@@ -40,9 +40,6 @@
         <div class="auto-style3">
             <div class="auto-style4" style="padding: 0px 0px 0px 0px; margin-left: auto; margin-right: auto; background-color: #FFFFFF; border-radius: 10px;">
                 <span class="auto-style5">
-                <div style="position: absolute; top: 78px; left: 839px; width: 80px; height: 18px;">
-            <asp:LinkButton ID="LinkButton1" runat="server" style="font-size: small">Cerrar sesión</asp:LinkButton>
-                </div>
                 <br />
                 <div>
                 <span class="auto-style5">

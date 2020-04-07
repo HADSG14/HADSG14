@@ -22,6 +22,11 @@
 
     Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles LinkButton1.Click
         System.Web.Security.FormsAuthentication.SignOut()
+        Application.Lock()
+        Dim NS As Integer = Application.Contents("profesores")
+        NS = Application.Contents("profesores") - 1
+        Application.Contents("profesores") = NS
+        Application.UnLock()
         Session.Abandon()
         Response.Redirect("~/Inicio.aspx")
     End Sub
