@@ -181,6 +181,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoG14.Home._LinkButton4_ConfirmButtonExtender">
+<summary>
+Control LinkButton4_ConfirmButtonExtender.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoG14.Home._ScriptManager2">
 <summary>
 Control ScriptManager2.
@@ -238,6 +247,60 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoG14.Home._ListBox2">
 <summary>
 Control ListBox2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.coordinador._form2">
+<summary>
+Control form2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.coordinador._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.coordinador._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.coordinador._DropDownList1">
+<summary>
+Control DropDownList1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.coordinador._SqlDataSource1">
+<summary>
+Control SqlDataSource1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.coordinador._HorasLabel">
+<summary>
+Control HorasLabel.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -469,15 +532,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoG14.InsertarTarea._LinkButton1">
-<summary>
-Control LinkButton1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ProyectoG14.InsertarTarea._TextBox1">
 <summary>
 Control TextBox1.
@@ -571,15 +625,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoG14.InstanciarTarea._form2">
 <summary>
 Control form2.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ProyectoG14.InstanciarTarea._LinkButton1">
-<summary>
-Control LinkButton1.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -787,6 +832,33 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoG14.Registro._form1">
 <summary>
 Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Registro._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Registro._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoG14.Registro._ResultadoLabel">
+<summary>
+Control ResultadoLabel.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -1036,15 +1108,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoG14.TareasAlumno._LinkButton1">
-<summary>
-Control LinkButton1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ProyectoG14.TareasAlumno._DropDownList1">
 <summary>
 Control DropDownList1.
@@ -1066,15 +1129,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoG14.TareasProfesor._form2">
 <summary>
 Control form2.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ProyectoG14.TareasProfesor._LinkButton1">
-<summary>
-Control LinkButton1.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -1152,6 +1206,66 @@ Control Button1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member>
+<member name="T:ProyectoG14.matricula.Matriculas">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.matricula.Matriculas.#ctor">
+<remarks/>
+</member>
+<member name="E:ProyectoG14.matricula.Matriculas.comprobarCompleted">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.matricula.Matriculas.comprobar(System.String)">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.matricula.Matriculas.comprobarAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.matricula.Matriculas.comprobarAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.matricula.Matriculas.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:ProyectoG14.matricula.comprobarCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ProyectoG14.matricula.comprobarCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ProyectoG14.matricula.comprobarCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:ProyectoG14.media.ServicioASMX">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.media.ServicioASMX.#ctor">
+<remarks/>
+</member>
+<member name="E:ProyectoG14.media.ServicioASMX.MediaCompleted">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.media.ServicioASMX.Media(System.String)">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.media.ServicioASMX.MediaAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.media.ServicioASMX.MediaAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:ProyectoG14.media.ServicioASMX.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:ProyectoG14.media.MediaCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ProyectoG14.media.MediaCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ProyectoG14.media.MediaCompletedEventArgs.Result">
+<remarks/>
 </member>
 </members>
 </doc>

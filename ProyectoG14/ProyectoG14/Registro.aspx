@@ -25,14 +25,26 @@
             <br />
             <div style="padding: 10px 0px 0px 0px; margin-left: auto; margin-right: auto; background-color: #FFFFFF; border-radius: 10px; text-align: center; width: 393px;">
             <span class="auto-style3">
-            <span class="auto-style2">Regístrate</span><span class="auto-style1"><br />
-            <br />
-            </span>E-mail :<br />
-&nbsp;<asp:TextBox ID="TextBox3" runat="server" CssClass="auto-style3" Height="16px" Width="168px"></asp:TextBox>
-                &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+            <span class="auto-style2">
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
                 <br />
-&nbsp;&nbsp;&nbsp;
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="Error de sintaxis" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                Regístrate<br />
+                </span><span class="auto-style1">
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <span class="auto-style3"><span class="auto-style1">
+                        <asp:Label ID="ResultadoLabel" runat="server" ForeColor="Black" style="font-size: small"></asp:Label>
+            <br />
+                        </span>E-mail :<br /> &nbsp;<asp:TextBox ID="TextBox3" runat="server" CssClass="auto-style3" Height="16px" Width="168px"></asp:TextBox>
+                        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                <br />
+                        &nbsp;&nbsp;&nbsp;
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="Error de sintaxis" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                        </span>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </span>
                 <br />
                 Nombre:<br />
             <asp:TextBox ID="TextBox6" runat="server" CssClass="auto-style3" Height="16px" Width="168px"></asp:TextBox>
@@ -71,6 +83,7 @@
             <asp:Label ID="ErrorSql" runat="server" Text="Label"></asp:Label>
                 <br />
 &nbsp;<asp:LinkButton ID="link_verificar" runat="server" CausesValidation="False" Visible="False">Haz click aquí para verificar el email</asp:LinkButton>
+                <br />
             </div>
             <br />
             &nbsp;&nbsp;</span><br />

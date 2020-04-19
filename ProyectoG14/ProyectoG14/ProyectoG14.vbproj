@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,6 +65,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -110,6 +114,7 @@
     <Content Include="App_Data\SEG.xml" />
     <Content Include="CambiarContraseña.aspx" />
     <Content Include="ConfirmarCorreo.aspx" />
+    <Content Include="Profesores\coordinador.aspx" />
     <Content Include="Profesores\ExportarTareas.aspx" />
     <Content Include="fondo.jpeg" />
     <Content Include="fondo2.png" />
@@ -121,9 +126,15 @@
     <Content Include="Alumnos\InstanciarTarea.aspx" />
     <Content Include="Profesores\Profesor.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="ServicioASMX.asmx" />
     <Content Include="SolicitarCambioContraseña.aspx" />
     <Content Include="Alumnos\TareasAlumno.aspx" />
     <Content Include="Profesores\TareasProfesor.aspx" />
+    <Content Include="Web References\media\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\media\ServicioASMX.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -149,6 +160,14 @@
     </Compile>
     <Compile Include="Alumnos\Alumnos.aspx.vb">
       <DependentUpon>Alumnos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Interface1.vb" />
+    <Compile Include="Profesores\coordinador.aspx.designer.vb">
+      <DependentUpon>coordinador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\coordinador.aspx.vb">
+      <DependentUpon>coordinador.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Profesores\ExportarTareas.aspx.designer.vb">
@@ -219,6 +238,10 @@
       <DependentUpon>Registro.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="ServicioASMX.asmx.vb">
+      <DependentUpon>ServicioASMX.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SolicitarCambioContraseña.aspx.designer.vb">
       <DependentUpon>SolicitarCambioContraseña.aspx</DependentUpon>
     </Compile>
@@ -239,6 +262,16 @@
     <Compile Include="Profesores\TareasProfesor.aspx.vb">
       <DependentUpon>TareasProfesor.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Web References\matricula\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\media\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -269,12 +302,48 @@
     <None Include="tareas.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Web References\matricula\comprobarmatricula.wsdl" />
+    <Content Include="Web References\matricula\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\media\ServicioASMX.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://ehusw.es/jav/ServiciosWeb/comprobarmatricula.php%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\matricula\</RelPath>
+      <UpdateFromURL>http://ehusw.es/jav/ServiciosWeb/comprobarmatricula.php%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ProyectoG14_matricula_Matriculas</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:53743/ServicioASMX.asmx%3fop=Media">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\media\</RelPath>
+      <UpdateFromURL>http://localhost:53743/ServicioASMX.asmx%3fop=Media</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ProyectoG14_media_ServicioASMX</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

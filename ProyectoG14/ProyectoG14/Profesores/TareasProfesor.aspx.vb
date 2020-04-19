@@ -13,16 +13,7 @@
 
     End Sub
 
-    Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles LinkButton1.Click
-        System.Web.Security.FormsAuthentication.SignOut()
-        Session.Abandon()
-        Application.Lock()
-        Dim NS As Integer = Application.Contents("profesores")
-        NS = Application.Contents("profesores") - 1
-        Application.Contents("profesores") = NS
-        Application.UnLock()
-        Response.Redirect("~/Inicio.aspx")
-    End Sub
+
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Response.Redirect("InsertarTarea.aspx")
