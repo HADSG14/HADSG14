@@ -67,10 +67,10 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://localhost:53743/ServicioASMX.asmx")>  _
-        Public ReadOnly Property ProyectoG14_media_ServicioASMX() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("http://localhost:64547/WebService1.asmx")>  _
+        Public ReadOnly Property ProyectoG14_media_WebService1() As String
             Get
-                Return CType(Me("ProyectoG14_media_ServicioASMX"),String)
+                Return CType(Me("ProyectoG14_media_WebService1"),String)
             End Get
         End Property
     End Class

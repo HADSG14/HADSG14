@@ -1237,25 +1237,25 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="P:ProyectoG14.matricula.comprobarCompletedEventArgs.Result">
 <remarks/>
 </member>
-<member name="T:ProyectoG14.media.ServicioASMX">
+<member name="T:ProyectoG14.media.WebService1">
 <remarks/>
 </member>
-<member name="M:ProyectoG14.media.ServicioASMX.#ctor">
+<member name="M:ProyectoG14.media.WebService1.#ctor">
 <remarks/>
 </member>
-<member name="E:ProyectoG14.media.ServicioASMX.MediaCompleted">
+<member name="E:ProyectoG14.media.WebService1.MediaCompleted">
 <remarks/>
 </member>
-<member name="M:ProyectoG14.media.ServicioASMX.Media(System.String)">
+<member name="M:ProyectoG14.media.WebService1.Media(System.String)">
 <remarks/>
 </member>
-<member name="M:ProyectoG14.media.ServicioASMX.MediaAsync(System.String)">
+<member name="M:ProyectoG14.media.WebService1.MediaAsync(System.String)">
 <remarks/>
 </member>
-<member name="M:ProyectoG14.media.ServicioASMX.MediaAsync(System.String,System.Object)">
+<member name="M:ProyectoG14.media.WebService1.MediaAsync(System.String,System.Object)">
 <remarks/>
 </member>
-<member name="M:ProyectoG14.media.ServicioASMX.CancelAsync(System.Object)">
+<member name="M:ProyectoG14.media.WebService1.CancelAsync(System.Object)">
 <remarks/>
 </member>
 <member name="T:ProyectoG14.media.MediaCompletedEventHandler">

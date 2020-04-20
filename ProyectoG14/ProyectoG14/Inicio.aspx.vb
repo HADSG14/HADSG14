@@ -66,7 +66,13 @@ Public Class Inicio
 
                 'USUARIO: PROFESOR
             Else
-                System.Web.Security.FormsAuthentication.SetAuthCookie(type, False)
+                If correo = "vadillo@ehu.es" Then
+                    System.Web.Security.FormsAuthentication.SetAuthCookie("coordinador", False)
+
+                Else
+                    System.Web.Security.FormsAuthentication.SetAuthCookie(type, False)
+
+                End If
                 Session("type") = type
                 Application.Lock()
 

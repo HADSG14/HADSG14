@@ -27,8 +27,8 @@ Namespace media
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0"),  _
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     System.Web.Services.WebServiceBindingAttribute(Name:="ServicioASMXSoap", [Namespace]:="http://tempuri.org/")>  _
-    Partial Public Class ServicioASMX
+     System.Web.Services.WebServiceBindingAttribute(Name:="WebService1Soap", [Namespace]:="http://tempuri.org/")>  _
+    Partial Public Class WebService1
         Inherits System.Web.Services.Protocols.SoapHttpClientProtocol
         
         Private MediaOperationCompleted As System.Threading.SendOrPostCallback
@@ -38,7 +38,7 @@ Namespace media
         '''<remarks/>
         Public Sub New()
             MyBase.New
-            Me.Url = Global.ProyectoG14.My.MySettings.Default.ProyectoG14_media_ServicioASMX
+            Me.Url = Global.ProyectoG14.My.MySettings.Default.ProyectoG14_media_WebService1
             If (Me.IsLocalFileSystemWebService(Me.Url) = true) Then
                 Me.UseDefaultCredentials = true
                 Me.useDefaultCredentialsSetExplicitly = false

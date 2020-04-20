@@ -126,7 +126,6 @@
     <Content Include="Alumnos\InstanciarTarea.aspx" />
     <Content Include="Profesores\Profesor.aspx" />
     <Content Include="Registro.aspx" />
-    <Content Include="ServicioASMX.asmx" />
     <Content Include="SolicitarCambioContraseña.aspx" />
     <Content Include="Alumnos\TareasAlumno.aspx" />
     <Content Include="Profesores\TareasProfesor.aspx" />
@@ -134,7 +133,7 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
     </Content>
-    <None Include="Web References\media\ServicioASMX.disco" />
+    <None Include="Web References\media\WebService1.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -162,7 +161,6 @@
       <DependentUpon>Alumnos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Interface1.vb" />
     <Compile Include="Profesores\coordinador.aspx.designer.vb">
       <DependentUpon>coordinador.aspx</DependentUpon>
     </Compile>
@@ -238,10 +236,6 @@
       <DependentUpon>Registro.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="ServicioASMX.asmx.vb">
-      <DependentUpon>ServicioASMX.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="SolicitarCambioContraseña.aspx.designer.vb">
       <DependentUpon>SolicitarCambioContraseña.aspx</DependentUpon>
     </Compile>
@@ -307,7 +301,7 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
     </Content>
-    <None Include="Web References\media\ServicioASMX.wsdl" />
+    <None Include="Web References\media\WebService1.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -333,16 +327,16 @@
       <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>ProyectoG14_matricula_Matriculas</CachedSettingsPropName>
     </WebReferenceUrl>
-    <WebReferenceUrl Include="http://localhost:53743/ServicioASMX.asmx%3fop=Media">
+    <WebReferenceUrl Include="http://localhost:64547/WebService1.asmx%3fop=Media">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\media\</RelPath>
-      <UpdateFromURL>http://localhost:53743/ServicioASMX.asmx%3fop=Media</UpdateFromURL>
+      <UpdateFromURL>http://localhost:64547/WebService1.asmx%3fop=Media</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>ProyectoG14_media_ServicioASMX</CachedSettingsPropName>
+      <CachedSettingsPropName>ProyectoG14_media_WebService1</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>

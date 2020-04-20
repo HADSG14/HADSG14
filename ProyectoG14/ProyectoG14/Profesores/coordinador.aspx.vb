@@ -6,7 +6,7 @@
     End Sub
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
-        Dim servicio As New media.ServicioASMX
+        Dim servicio As New media.WebService1
 
         Dim media As Double = servicio.Media(DropDownList1.SelectedValue)
         If media = -1 Then
