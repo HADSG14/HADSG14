@@ -1,0 +1,34 @@
+﻿{% extends "app/layout.html" %}
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+{% if latest_question_list %}
+<form action="{% url 'index' %}" method="post">
+    {%csrf_token%}
+<select id='temas' name='temas'>
+  <option value="-">---Select---</option>
+  {% for q in distinct_topic %}
+  <option value="{{q.topic}}">{{q.topic}}</option>
+  {% endfor %}
+</select>
+<br/>
+<button type="submit" id="filtrar">Filtrar</button>
+<br/>
+</form>
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+  
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+{% if request.user.is_authenticated %}
+<a href="{% url 'add' %}"><h2>Insertar pregunta</h2></a> 
+{% endif %}
+
+{% endblock %}
+
